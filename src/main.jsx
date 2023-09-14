@@ -9,9 +9,9 @@ import Introduction from "./pages/Introduction.jsx";
 import DessertRanking from "./pages/DessertRanking.jsx";
 import InteriorRanking from "./pages/InteriorRanking.jsx";
 import DessertDetail from "./pages/DessertDetail.jsx";
-import SignUpChoiceModal from "./components/modal/SignUpChoiceModal.jsx";
-import SignUpModal from "./components/modal/SignUpModal.jsx";
 import MyPage from "./pages/mypage/MyPage.jsx";
+import FavoriteItems from "./pages/FavoriteItems.jsx";
+import UnDevelop from "./components/UnDevelop.jsx";
 
 const router = createBrowserRouter([
   {
@@ -24,9 +24,9 @@ const router = createBrowserRouter([
       { path: "/dessertranking", element: <DessertRanking /> },
       { path: "/interiorranking", element: <InteriorRanking /> },
       { path: "/dessertdetail/:id", element: <DessertDetail /> },
-      { path: "/signupchoice", element: <SignUpChoiceModal /> },
-      { path: "/signup", element: <SignUpModal /> },
       { path: "/mypage", element: <MyPage /> },
+      { path: "/favorititems", element: <FavoriteItems /> },
+      { path: "/undevelop", element: <UnDevelop /> },
     ],
   },
 ]);

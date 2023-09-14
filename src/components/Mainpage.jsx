@@ -1,3 +1,43 @@
 export default function Mainpage() {
-  return <div>Mainpage</div>;
+  return (
+    <div className="">
+      Mainpage
+      <div>gkgk</div>
+      <div>gkgk</div>
+      <div>gkgk</div>
+      <div>gkgk</div>
+      <div>gkgk</div>
+      <div>gkgk</div>
+      <div>gkgk</div>
+      <div>gkgk</div>
+      <div>gkgk</div>
+      <div>gkgk</div>
+      <div>gkgk</div>
+      <div>gkgk</div>
+      <div>gkgk</div>
+      <div>gkgk</div>
+      <div>gkgk</div>
+      <div>gkgk</div>
+      <div>gkgk</div>
+      <div>gkgk</div>
+      <div>gkgk</div>
+      <div>gkgk</div>
+      <div>gkgk</div>
+      <div>gkgk</div>
+      <div>gkgk</div>
+      <div>gkgk</div>
+      <div>gkgk</div>
+      <div>gkgk</div>
+      <div>gkgk</div>
+      <div>gkgk</div>
+      <div>gkgk</div>
+      <div>gkgk</div>
+      <div>gkgk</div>
+      <div>gkgk</div>
+      <div>gkgk</div>
+      <div>gkgk</div>
+      <div>gkgk</div>
+      <div>gkgk</div>
+    </div>
+  );
 }
