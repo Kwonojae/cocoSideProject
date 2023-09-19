@@ -4,9 +4,9 @@ import Banner from "../components/Banner";
 
 export default function Home() {
   return (
-    <section className="flex-grow pb-4">
+    <div className="flex-grow-1 h-full pb-4 ">
       <Banner />
       <Mainpage />
-    </section>
+    </div>
   );
 }

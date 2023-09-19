@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import Button from "../../ui/Button";
-import SignUpCeoInputGroup from "./SignUpCeoInputGroup";
+import InPut from "../../ui/InPut";
 import { useContext, useState } from "react";
-import { createUser } from "../../../api/firebase";
+import { addNewUserCeo, createUser } from "../../../api/firebase";
 import { ModalContext } from "../../../context/ModalContext";
 
 export default function SignUpCeo() {
@@ -37,6 +37,7 @@ export default function SignUpCeo() {
         return alert("이메일 형식을 확인해주세요");
       } else {
         setOpen(false);
+        addNewUserCeo(ceoInfo);
         return createUser(ceoInfo);
       }
     } catch (error) {
@@ -50,7 +51,7 @@ export default function SignUpCeo() {
       <div className="max-w-2xl mx-auto bg-white p-16">
         <form onSubmit={handleSubmit}>
           <div className="grid gap-6 mb-6 lg:grid-cols-2">
-            <SignUpCeoInputGroup
+            <InPut
               onChange={handleChagne}
               label="First name"
               id="first_name"
@@ -60,7 +61,7 @@ export default function SignUpCeo() {
               autocomplete="new_first_name"
               required
             />
-            <SignUpCeoInputGroup
+            <InPut
               onChange={handleChagne}
               label="Last name"
               id="last_name"
@@ -70,7 +71,7 @@ export default function SignUpCeo() {
               autocomplete="new_last_name"
               required
             />
-            <SignUpCeoInputGroup
+            <InPut
               onChange={handleChagne}
               label="Company"
               id="company"
@@ -80,7 +81,7 @@ export default function SignUpCeo() {
               autocomplete="new_company"
               required
             />
-            <SignUpCeoInputGroup
+            <InPut
               onChange={handleChagne}
               label="Phone number"
               id="phone"
@@ -91,7 +92,7 @@ export default function SignUpCeo() {
               pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
               required
             />
-            <SignUpCeoInputGroup
+            <InPut
               onChange={handleChagne}
               label="Website URL"
               id="website"
@@ -102,7 +103,7 @@ export default function SignUpCeo() {
               required
             />
           </div>
-          <SignUpCeoInputGroup
+          <InPut
             onChange={handleChagne}
             label="Email address"
             id="email"
@@ -112,7 +113,7 @@ export default function SignUpCeo() {
             autocomplete="new_email"
             required
           />
-          <SignUpCeoInputGroup
+          <InPut
             onChange={handleChagne}
             label="Password"
             id="password"
@@ -123,7 +124,7 @@ export default function SignUpCeo() {
             required
           />
           {/* pwd체크 메서드 구현하기 */}
-          <SignUpCeoInputGroup
+          <InPut
             onChange={handleChagne}
             label="Confirm password"
             id="confirm_password"

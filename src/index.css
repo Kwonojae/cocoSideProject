@@ -8,5 +8,5 @@ body {
   @apply flex flex-col items-center h-screen w-screen;
 }
 #root {
-  @apply w-full h-full max-w-screen-2xl flex flex-col;
+  @apply w-full h-full flex flex-col max-w-screen-2xl flex-grow;
 }

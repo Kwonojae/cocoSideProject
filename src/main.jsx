@@ -12,6 +12,10 @@ import DessertDetail from "./pages/DessertDetail.jsx";
 import MyPage from "./pages/mypage/MyPage.jsx";
 import FavoriteItems from "./pages/FavoriteItems.jsx";
 import UnDevelop from "./components/UnDevelop.jsx";
+import UserProfile from "./components/mypage/UserProfile.jsx";
+import DessertList from "./components/mypage/DessertList.jsx";
+import AddDessertForm from "./components/mypage/AddDessertForm.jsx";
+import CardUpdate from "./pages/mypage/CardUpdate.jsx";
 
 const router = createBrowserRouter([
   {
@@ -23,8 +27,16 @@ const router = createBrowserRouter([
       { path: "/introduction", element: <Introduction /> },
       { path: "/dessertranking", element: <DessertRanking /> },
       { path: "/interiorranking", element: <InteriorRanking /> },
-      { path: "/dessertdetail/:id", element: <DessertDetail /> },
-      { path: "/mypage", element: <MyPage /> },
+      {
+        path: "/mypage",
+        element: <MyPage />,
+        children: [
+          { index: true, element: <UserProfile /> },
+          { path: "adddessert", element: <AddDessertForm /> },
+          { path: "dessertlist", element: <DessertList /> },
+          { path: "cardupdate/:id", element: <CardUpdate /> },
+        ],
+      },
       { path: "/favorititems", element: <FavoriteItems /> },
       { path: "/undevelop", element: <UnDevelop /> },
     ],

@@ -23,7 +23,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="flex flex-grow-0 justify-between w-full p-2">
+      <header className="flex flex-grow-0 justify-between w-full p-2 ">
         <Link className="flex items-center text-4xl" to="/">
           <img className="w-16" src="/images/Logo.png" alt="Coco" />
           <h1 className="px-4">Coco</h1>

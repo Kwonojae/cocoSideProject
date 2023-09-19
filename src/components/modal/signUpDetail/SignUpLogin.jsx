@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import SignUpCeoInputGroup from "./SignUpCeoInputGroup";
+import InPut from "../../ui/InPut";
 import Button from "../../ui/Button";
 import { useAuthContext } from "../../../context/AuthContext";
 import { ModalContext } from "../../../context/ModalContext";
@@ -28,7 +28,7 @@ export default function SignUpLogin() {
   return (
     <form onSubmit={handleSubmit}>
       <div className="max-w-2xl mx-auto bg-white p-10 ">
-        <SignUpCeoInputGroup
+        <InPut
           onChange={handleChagne}
           label="EMAIL"
           id="email"
@@ -38,7 +38,7 @@ export default function SignUpLogin() {
           autocomplete="new_email"
           required
         />
-        <SignUpCeoInputGroup
+        <InPut
           onChange={handleChagne}
           label="PASSWORD"
           id="password"
