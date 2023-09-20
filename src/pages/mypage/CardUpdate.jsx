@@ -1,4 +1,4 @@
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { uploadImage } from "../../api/uploader";
 import { useState } from "react";
 import { TbPhotoPlus } from "react-icons/tb";
@@ -16,17 +16,17 @@ export default function CardUpdate() {
   const [selectedFile, setSelectedFile] = useState(null);
   const [previewUrl, setPreviewUrl] = useState(null);
   const [isUploading, setIsUploading] = useState(false);
-  const [success, setSuccess] = useState("");
   const [uproduct, setUproduct] = useState({
     title: title || "",
     description: description || "",
   });
 
+  const navigate = useNavigate();
+
   const handleChange = (e) => {
     const { id, value, files } = e.target;
     // 파일을 읽어 미리보기 URL 생성
     //FileReader 객체를 생성하고 파일을 읽어 올때 사용한다
-    // console.log(product);
     if (id === "file" && files.length > 0) {
       const file = files[0];
       const reader = new FileReader();
@@ -49,23 +49,18 @@ export default function CardUpdate() {
       uploadImage(selectedFile) //
         .then((url) => {
           updateDessert(id, uproduct, url, userId);
-          setSuccess("제품이 수정되었습니다.");
-          setTimeout(() => {
-            setSuccess(null);
-          }, 4000);
+          alert("수정되었습니다");
+          navigate("/mypage/dessertlist");
         })
         .catch((error) => {
           console.error("업데이트 오류", error);
         })
         .finally(() => setIsUploading(false));
     } else {
-      console.log("  진입합니다");
       updateDessert(id, uproduct, image, userId) //
         .then(() => {
-          setSuccess("제품이 수정되었습니다.");
-          setTimeout(() => {
-            setSuccess(null);
-          }, 4000);
+          alert("수정되었습니다");
+          navigate("/mypage/dessertlist");
         })
         .catch((error) => {
           console.error("업데이트 오류:", error);
@@ -87,15 +82,19 @@ export default function CardUpdate() {
         >
           <div className="flex flex-col  items-start justify-center rounded-2xl bg-white bg-clip-border px-3 py-4 shadow-3xl shadow-shadow-500 ">
             <div className="flex items-center w-full justify-center bg-grey-lighter mb-28">
-              <label className="w-full h-72 flex flex-col items-center px-4 py-6 rounded-lg shadow-lg tracking-wide uppercase border  cursor-pointer hover:bg-sky-100 ">
+              <label className="w-full h-72 flex flex-col items-center  rounded-lg shadow-lg tracking-wide uppercase border  cursor-pointer hover:bg-sky-100 ">
                 {previewUrl ? (
                   <img
                     src={previewUrl}
                     alt="Preview"
-                    className="w-full h-full"
+                    className="h-full w-full py-2 sm:h-full sm:w-10/12 object-cover"
                   />
                 ) : image ? (
-                  <img src={image} alt="Preview" className="w-full h-full" />
+                  <img
+                    src={image}
+                    alt="Preview"
+                    className="h-full w-full py-2 sm:h-full sm:w-10/12 object-cover"
+                  />
                 ) : (
                   <>
                     <span className="mt-2 text-base leading-normal">
@@ -134,7 +133,6 @@ export default function CardUpdate() {
               />
             </div>
             <div className="flex justify-end items-center w-full pt-28 ">
-              {success && <p className="mr-10">💚 {success} </p>}
               <Button text={isUploading ? "업로드중..." : "수정하기"}></Button>
             </div>
           </div>

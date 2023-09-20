@@ -1,7 +1,6 @@
 import { useQuery } from "react-query";
 import { getDessertList } from "../../api/firebase";
 import DessertListCard from "./DessertListCard";
-// import { useNavigate } from "react-router-dom";
 
 export default function DessertList() {
   const {
@@ -25,11 +24,7 @@ export default function DessertList() {
         <div className="grid grid-rows-4 gap-4 px-2 w-full h-full">
           {products &&
             products.map((product) => (
-              <DessertListCard
-                key={product.id}
-                product={product}
-                // onClick={handleUpdate}
-              />
+              <DessertListCard key={product.id} product={product} />
             ))}
         </div>
       </div>

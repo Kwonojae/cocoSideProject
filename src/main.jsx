@@ -27,6 +27,8 @@ const router = createBrowserRouter([
       { path: "/introduction", element: <Introduction /> },
       { path: "/dessertranking", element: <DessertRanking /> },
       { path: "/interiorranking", element: <InteriorRanking /> },
+      { path: "/favorititems", element: <FavoriteItems /> },
+      { path: "/undevelop", element: <UnDevelop /> },
       {
         path: "/mypage",
         element: <MyPage />,
@@ -37,8 +39,6 @@ const router = createBrowserRouter([
           { path: "cardupdate/:id", element: <CardUpdate /> },
         ],
       },
-      { path: "/favorititems", element: <FavoriteItems /> },
-      { path: "/undevelop", element: <UnDevelop /> },
     ],
   },
 ]);

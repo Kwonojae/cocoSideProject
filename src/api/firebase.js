@@ -1,7 +1,7 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAuth,createUserWithEmailAndPassword,signInWithEmailAndPassword, onAuthStateChanged, signOut } from 'firebase/auth'
-import { child, get, getDatabase, ref, set, update } from 'firebase/database'
+import { child, get, getDatabase, ref, remove, set, update } from 'firebase/database'
 import {v4 as uuid} from 'uuid'
 
 
@@ -22,8 +22,8 @@ const auth = getAuth(app)
 const db = getDatabase(app);
 
 /**
- * FireBase Auth
- * createUserWithEmailAndPassword API 
+ * @FireBase Auth
+ * @createUserWithEmailAndPassword API 
  * @param {*} user 
  */
 export async function createUser(user){
@@ -38,7 +38,8 @@ export async function createUser(user){
       }
 }
 /**
- * FireBase AUTH
+ * @FireBase AUTH
+ * @LOGIN
  * signInWithEmailAndPassword API 
  * @param {*} user 
  */
@@ -55,7 +56,8 @@ export async function login(user){
 }
 
 /**
- * FIREBASE 
+ * @FIREBASE
+ * @LogOut
  * signOut API
  */
 export function logout() {
@@ -77,7 +79,7 @@ export function onUserStateChange(callback) {
 
 /**
  * @SET
- * UserCeo List Update 
+ * @UserCeoInfoListUpdate 
  * - 제거 pareInt 로 넣을시 문자열에서 정수로 변환과정시 - 이 있으면 제대로 이루어지지 않는 현상이 있다.
  * 기본 유저와 CEO 유저의 구분 company가 있고 없고로 구현한다.
  * @param {*} ceoInfo 
@@ -111,7 +113,7 @@ export async function addNewUserCeo(ceoInfo) {
 }
 /**
  * @Get
- * MyPage UserCeo ProFile
+ * @MyPageUserCeoProFile
  * firebase에 회원가입한 유저의 정보를 가져오려는데 UID는 나오지만 해당 유저의 데이터베이스에 저장되는 정보는 포함이 안되어 있어서 
  * UID로는 정보를 못가져오고 데이터베이스에 저장된 email의 값과 현재 로그인한 유저의 UID의 EMAIL을 비교하여 정보를 가져온다. 
  * @returns ;
@@ -143,7 +145,7 @@ export async function getCeoProfile() {
 
 /**
  * @SET
- * CEO ADD Product 
+ * @CEO ADD Product 
  * 로그인한 유저의 id 값을 사용하여 userCeo 안에 product안에 데이터를 추가함
  * mypage에서 userCeo의 데이터를 받고 다른 하위 페이지에 데이터를 넘겨주는 문제가 있었다 방법을 모르겠고 처음부터 설계가 잘못된건가 싶다.
  */
@@ -166,7 +168,7 @@ export async function addNewDessert(product,ceoId,imageUrl){
  * @GET
  * Object.values(userCeo)를 했는데 product도 또 해줘야되더라 
  * userProfile과 코드가 거희 똑같다 리턴값이 product이다 코드 중복을 제거하고싶지만 나중에하자 
- * TODO: 코드중복 제거 
+ * TODO: 코드중복 제거 가능한가? Context사용해서 가능할듯 구현부 
  * @returns 
  */
 export async function getDessertList() {
@@ -226,4 +228,19 @@ export async function updateDessert(id,uproduct,imageurl,userId){
         } catch (error) {
             console.error("업데이트 오류:", error);
         }
+}
+
+/**
+ * @REMOVE
+ * 삭제 성공시 페이지에 캐싱된 데이터가 바로 업데이트 안되고 ui에는 그대로 표시되는 문제가 있었다
+ * useMutaion을 사용하여 invalidateQueries를 사용하여 업데이트 되도록 함.
+ * @param {*} userId 
+ * @param {*} id 
+ * @returns 
+ */
+export async function removeDessert(userId,id) {
+    const dbRef = ref(db);
+    const uProductRef = child(dbRef,`userCeo/${userId}/product/${id}`);
+
+    return remove(uProductRef)
 }

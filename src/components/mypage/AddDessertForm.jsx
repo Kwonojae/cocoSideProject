@@ -98,12 +98,12 @@ export default function AddDessertForm() {
         >
           <div className="flex flex-col  items-start justify-center rounded-2xl bg-white bg-clip-border px-3 py-4 shadow-3xl shadow-shadow-500 ">
             <div className="flex items-center w-full justify-center bg-grey-lighter mb-28">
-              <label className="w-full h-72 flex flex-col items-center px-4 py-6 rounded-lg shadow-lg tracking-wide uppercase border  cursor-pointer hover:bg-sky-100 ">
+              <label className="w-full h-72 flex flex-col items-center   rounded-lg shadow-lg tracking-wide uppercase border  cursor-pointer hover:bg-sky-100 ">
                 {previewUrl ? (
                   <img
                     src={previewUrl}
                     alt="Preview"
-                    className="w-full h-full"
+                    className="h-full w-full py-2 sm:h-full sm:w-10/12 object-cover"
                   />
                 ) : (
                   <>

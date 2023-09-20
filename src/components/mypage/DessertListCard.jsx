@@ -1,17 +1,37 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { removeDessert } from "../../api/firebase";
+import { useMutation, useQueryClient } from "react-query";
 
 export default function DessertListCard({
-  onClick,
   product,
-  product: { id, description, image, title },
+  product: { id, description, image, title, userId },
 }) {
+  const queryClient = useQueryClient();
+  const deleteDessert = useMutation(
+    ({ userId, id }) => removeDessert(userId, id),
+    {
+      onSuccess: () => queryClient.invalidateQueries(["products"]),
+    }
+  );
+
   const navigate = useNavigate();
   const handleUpdate = () => {
     console.log(id);
     navigate(`/mypage/cardupdate/${id}`, {
       state: { product },
     });
+  };
+  const handleDelete = () => {
+    console.log("삭제하기");
+    deleteDessert.mutate(
+      { userId, id },
+      {
+        onSuccess: () => {
+          alert("삭제되었습니다");
+        },
+      }
+    );
   };
   return (
     <>
@@ -31,7 +51,12 @@ export default function DessertListCard({
           </div>
           <div className="w-full flex justify-end items-center">
             <button
-              //   onClick={() => onClick(id)}
+              onClick={handleDelete}
+              className="bg-gray-700 mr-5 text-white px-3 py-1 rounded-sm shadow-md"
+            >
+              삭제
+            </button>
+            <button
               onClick={handleUpdate}
               className="bg-gray-700 mr-5 text-white px-3 py-1 rounded-sm shadow-md"
             >
