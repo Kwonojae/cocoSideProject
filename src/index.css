@@ -11,5 +11,5 @@ body {
   @apply flex flex-col items-center bg-white;
 }
 #root {
-  @apply w-full h-full;
+  @apply w-full h-full flex;
 }

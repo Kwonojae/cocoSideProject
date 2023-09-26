@@ -41,7 +41,7 @@ export default function Mainpage() {
   }, [currentPage, pageCount]);
 
   return (
-    <div className="flex flex-col items-center justify-end h-screen">
+    <div className="flex flex-col items-center justify-end h-full snap-center">
       <Banner />
       <ReactPaginate
         className=""

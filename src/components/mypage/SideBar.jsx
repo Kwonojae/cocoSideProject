@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function SideBar() {
   return (
     <>
-      <ul className="space-y-2 tracking-wide mt-8">
+      <ul className="space-y-2 tracking-wide mt-8 ">
         <li>
           <Link
             to="/mypage"

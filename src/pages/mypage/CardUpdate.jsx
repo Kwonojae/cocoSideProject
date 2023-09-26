@@ -69,7 +69,7 @@ export default function CardUpdate() {
     }
   };
   return (
-    <div className="flex flex-col items-center h-full mt-10 ">
+    <div className="flex flex-col items-center h-full">
       <div className="relative flex flex-col w-4/5 items-center rounded-[20px]  mx-auto  bg-clip-border  p-3">
         <div className="mt-2 mb-8 w-full">
           <h4 className="px-2 text-xl font-bold text-navy-700 ">
