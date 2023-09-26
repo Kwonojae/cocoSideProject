@@ -1,12 +1,10 @@
 import { Link } from "react-router-dom";
 import { HiMoon, HiSun } from "react-icons/hi";
 import { AiOutlineHeart } from "react-icons/ai";
-import Navbar from "./Navbar";
 import SignUpModal from "./modal/SignUpModal";
 import { useContext } from "react";
 import { ModalContext } from "../context/ModalContext";
 import { useAuthContext } from "../context/AuthContext";
-import Button from "./ui/Button";
 
 export default function Header() {
   //   const { darkMode, toggleDarkMode } = useDarkMode();
@@ -22,8 +20,8 @@ export default function Header() {
   const { user, logout } = useAuthContext();
 
   return (
-    <>
-      <header className="flex flex-grow-0 justify-between w-full p-2 ">
+    <div className="w-11/12">
+      <header className="flex justify-between">
         <Link className="flex items-center text-4xl" to="/">
           <img className="w-16" src="/images/Logo.png" alt="Coco" />
           <h1 className="px-4">Coco</h1>
@@ -51,7 +49,6 @@ export default function Header() {
           />
         </nav>
       </header>
-      <Navbar />
-    </>
+    </div>
   );
 }

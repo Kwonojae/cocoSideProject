@@ -3,9 +3,9 @@ import SideBar from "../../components/mypage/SideBar";
 
 export default function MyPage() {
   return (
-    <div className="flex-grow  pb-4">
+    <div className="flex flex-grow mt-32">
       {/* 왼쪽사이드바 시작 */}
-      <aside className="ml-[-100%] fixed pb-3 px-6 w-full h-full flex flex-col justify-between border-r transition duration-300 md:w-4/12 lg:ml-0 lg:w-[18%] xl:w-[15%] 2xl:w-[10%]">
+      <aside className="ml-[-100%]  pb-3 px-6 w-full h-full flex flex-col justify-between border-r transition duration-300 md:w-4/12 lg:ml-0 lg:w-[18%] xl:w-[15%] 2xl:w-[10%]">
         <div>
           {/* 유저이미지 */}
           <div className="mt-8 text-center">
@@ -23,7 +23,7 @@ export default function MyPage() {
       </aside>
 
       {/* 데시보드 시작 */}
-      <section className="ml-auto mb-6 h-full lg:w-[75%] xl:w-[80%] 2xl:w-[80%]">
+      <section className=" mb-6 h-full lg:w-[75%] xl:w-[80%] 2xl:w-[80%]">
         <Outlet />
       </section>
     </div>

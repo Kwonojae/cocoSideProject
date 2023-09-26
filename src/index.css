@@ -5,8 +5,11 @@
 body {
   padding: 0;
   margin: 0;
-  @apply flex flex-col items-center h-screen w-screen;
+  width: 100vw;
+  height: 100vh;
+
+  @apply flex flex-col items-center bg-white;
 }
 #root {
-  @apply w-full h-full flex flex-col max-w-screen-2xl flex-grow;
+  @apply w-full h-full;
 }
