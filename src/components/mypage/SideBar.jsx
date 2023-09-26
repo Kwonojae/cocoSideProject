@@ -18,7 +18,7 @@ export default function SideBar() {
             to="adddessert"
             className="px-4 py-3 flex items-center space-x-4 transition ease-linear  hover:scale-110 duration-300   hover:text-sky-300 hover:font-bold "
           >
-            <span className="group-hover:text-gray-700">New Dessert</span>
+            <span className="group-hover:text-gray-700">디저트 추가</span>
           </Link>
         </li>
         <li>
