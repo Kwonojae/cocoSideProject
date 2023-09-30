@@ -16,6 +16,7 @@ import UserProfile from "./components/mypage/UserProfile.jsx";
 import DessertList from "./components/mypage/DessertList.jsx";
 import AddDessertForm from "./components/mypage/AddDessertForm.jsx";
 import CardUpdate from "./pages/mypage/CardUpdate.jsx";
+import ProtectedRoute from "./pages/ProtectedRoute.jsx";
 
 const router = createBrowserRouter([
   {
@@ -31,7 +32,11 @@ const router = createBrowserRouter([
       { path: "/undevelop", element: <UnDevelop /> },
       {
         path: "/mypage",
-        element: <MyPage />,
+        element: (
+          <ProtectedRoute>
+            <MyPage />
+          </ProtectedRoute>
+        ),
         children: [
           { index: true, element: <UserProfile /> },
           { path: "adddessert", element: <AddDessertForm /> },

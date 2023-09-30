@@ -1,8 +1,8 @@
 import { useContext, useState } from "react";
 import InPut from "../../ui/InPut";
 import Button from "../../ui/Button";
-import { useAuthContext } from "../../../context/AuthContext";
 import { ModalContext } from "../../../context/ModalContext";
+import useAuthContext from "../../../context/AuthContext";
 
 export default function SignUpLogin() {
   const [user, setUser] = useState({});

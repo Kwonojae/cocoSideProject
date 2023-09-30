@@ -15,11 +15,6 @@ export default function SignUpModal({
 }) {
   //TODO: modalRef handleCloseModal 모달창 밖에 클릭해도 창이 안닫히게 되는건지 이해가 안된다 여튼 의도한게 된거긴한데....
   // const modalRef = useRef(null);
-  const handleCloseModal = (e) => {
-    // if (modalRef.current && modalRef.current.contains(e.target)) {
-    //   // setOpen(false);
-    // }
-  };
 
   return (
     <>

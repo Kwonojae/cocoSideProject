@@ -4,9 +4,9 @@ import { AiOutlineHeart } from "react-icons/ai";
 import SignUpModal from "./modal/SignUpModal";
 import { useContext } from "react";
 import { ModalContext } from "../context/ModalContext";
-import { useAuthContext } from "../context/AuthContext";
 import { LuCat } from "react-icons/lu";
 import Navbar from "./Navbar";
+import useAuthContext from "../context/AuthContext";
 
 export default function Header() {
   //   const { darkMode, toggleDarkMode } = useDarkMode();

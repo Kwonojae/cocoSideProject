@@ -1,9 +1,8 @@
 import { Outlet } from "react-router-dom";
 import Header from "./components/Header";
 import { ModalProvider } from "./context/ModalContext";
-import AuthContextProvider from "./context/AuthContext";
 import { QueryClient, QueryClientProvider } from "react-query";
-import Navbar from "./components/Navbar";
+import { AuthContextProvider } from "./context/AuthContext";
 
 const queryClient = new QueryClient();
 export default function App() {
