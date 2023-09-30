@@ -23,14 +23,14 @@ const interiorItems = [
   { label: "Industry", path: "undevelop" },
 ];
 const NAVBUTTON =
-  "inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-md font-semibold text-gray-900 hover:bg-sky-200 transition-all hover:bg-opacity-60";
+  "inline-flex w-full justify-center gap-x-1.5 rounded-md  px-3 py-2 text-md font-semibold text-gray-900 hover:underline hover:decoration-2 transition-all ";
 const DROPDOWNITEM =
   "absolute -left-5 z-10 mt-2 w-36 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none";
 export default function Navbar() {
   return (
     <nav className="flex flex-grow-0 mb-2 w-11/12">
       <Link
-        className="inline-flex items-center justify-center gap-x-1.5 rounded-md bg-white pr-2 py-2 text-md font-semibold text-gray-900 hover:bg-sky-200 transition-all hover:bg-opacity-60"
+        className="inline-flex items-center justify-center gap-x-1.5 rounded-md  pr-2 py-2 text-md font-semibold text-gray-900 hover:underline hover:decoration-2"
         to="introduction"
       >
         <TfiFaceSmile className="text-xl" />

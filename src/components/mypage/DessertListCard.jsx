@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { removeDessert } from "../../api/firebase";
 import { useMutation, useQueryClient } from "react-query";
+import Button from "../ui/Button";
 
 export default function DessertListCard({
   product,
@@ -35,7 +36,7 @@ export default function DessertListCard({
   };
   return (
     <>
-      <div className="bg-white shadow-md mx-3 rounded-3xl flex flex-col justify-around items-center overflow-hidden sm:flex-row sm:h-52 sm:w-3/5 md:w-96 xl:w-full xl:h-80">
+      <div className="bg-white shadow-xl mx-3 rounded-3xl flex flex-col justify-around items-center overflow-hidden sm:flex-row sm:h-52 sm:w-3/5 md:w-96 xl:w-full xl:h-80">
         <img
           className="h-1/2 w-full sm:h-full sm:w-1/2 object-cover"
           src={image}
@@ -49,18 +50,13 @@ export default function DessertListCard({
           <div className="w-full">
             <p className="text-sm text-gray-500">{description}</p>
           </div>
-          <div className="w-full flex justify-end items-center">
+          <div className="w-full flex justify-end items-center gap-4">
+            <Button onClick={handleUpdate} text="수정하기"></Button>
             <button
               onClick={handleDelete}
-              className="bg-gray-700 mr-5 text-white px-3 py-1 rounded-sm shadow-md"
+              className="bg-gray-600 hover:bg-gray-800 h-10 w-16  mr-5 text-white px-3 py-1 rounded-lg "
             >
               삭제
-            </button>
-            <button
-              onClick={handleUpdate}
-              className="bg-gray-700 mr-5 text-white px-3 py-1 rounded-sm shadow-md"
-            >
-              수정하기
             </button>
           </div>
         </div>

@@ -2,8 +2,9 @@ import { useEffect, useState } from "react";
 import ReactPaginate from "react-paginate";
 import MainPageMasonry from "./MainPageMasonry";
 import Banner from "./Banner";
+import { SlArrowDown } from "react-icons/sl";
 
-export default function Mainpage() {
+export default function Mainpage({ scrollToMove }) {
   const totalItems = [
     <MainPageMasonry masonryItems={dessert1} />,
     <MainPageMasonry masonryItems={dessert2} />,
@@ -19,7 +20,7 @@ export default function Mainpage() {
   const startIndex = currentPage * itemsPerPage;
   const endIndex = Math.min(startIndex + itemsPerPage, totalItems.length);
   const currentItems = totalItems.slice(startIndex, endIndex);
-
+  const [scroll, setScroll] = useState(0);
   // 페이지 변경 이벤트 핸들러
   const handlePageClick = ({ selected }) => {
     setCurrentPage(selected);
@@ -30,10 +31,15 @@ export default function Mainpage() {
     setCurrentPage(nextPage);
   };
 
+  const scrollTo = () => {
+    const scrollAmount = window.document.documentElement.clientHeight; // 스크롤 양
+    console.log(`높이: ${scrollAmount}`);
+    window.scrollBy(0, scrollAmount);
+  };
+
   useEffect(() => {
     // 5초마다 autoNextPage 함수 실행
     const intervalId = setInterval(autoNextPage, 5000);
-
     return () => {
       // 컴포넌트 언마운트 시 interval 제거
       clearInterval(intervalId);
@@ -51,8 +57,8 @@ export default function Mainpage() {
         pageCount={pageCount}
         forcePage={currentPage}
         onPageChange={handlePageClick}
-        containerClassName={"flex justify-center space-x-2"}
-        activeClassName={"text-red-600"}
+        containerClassName={"flex justify-center space-x-2 "}
+        activeClassName={"text-[#e60022] "}
       />
       <div className="flex flex-col">
         {currentItems.map((item, index) => (
@@ -61,6 +67,12 @@ export default function Mainpage() {
           </div>
         ))}
       </div>
+      <button
+        onClick={scrollToMove}
+        className="rounded-full animate-bounce w-14 h-14 flex items-center text-center text-3xl  justify-center  text-white bg-[#e60022]  bg-opacity-70  "
+      >
+        <SlArrowDown />
+      </button>
     </div>
   );
 }

@@ -5,6 +5,8 @@ import SignUpModal from "./modal/SignUpModal";
 import { useContext } from "react";
 import { ModalContext } from "../context/ModalContext";
 import { useAuthContext } from "../context/AuthContext";
+import { LuCat } from "react-icons/lu";
+import Navbar from "./Navbar";
 
 export default function Header() {
   //   const { darkMode, toggleDarkMode } = useDarkMode();
@@ -20,11 +22,11 @@ export default function Header() {
   const { user, logout } = useAuthContext();
 
   return (
-    <div className="w-11/12">
-      <header className="flex justify-between">
-        <Link className="flex items-center text-4xl" to="/">
-          <img className="w-16" src="/images/Logo.png" alt="Coco" />
-          <h1 className="px-4">Coco</h1>
+    <div className="flex flex-col w-full pt-3 items-center">
+      <header className="flex justify-between w-11/12">
+        <Link className="flex items-center " to="/">
+          <LuCat className="text-[#e60022] text-5xl" />
+          <h1 className="px-4 text-[#e60022] text-4xl font-medium">Coco</h1>
         </Link>
         <nav className="flex items-center gap-4 font-semibold text-2xl">
           <button className="">
@@ -33,13 +35,25 @@ export default function Header() {
             {/* {darkMode && <HiSun />} */}
           </button>
           {user && (
-            <Link to="favorititems">
+            <Link className="text-[#e60022]" to="favorititems">
               <AiOutlineHeart />
             </Link>
           )}
-          {user && <Link to="mypage">MyPage</Link>}
-          {!user && <button onClick={ClickModal}>Sign Up</button>}
-          {user && <button onClick={logout}>Logout</button>}
+          {user && (
+            <Link className="font-" to="mypage">
+              MyPage
+            </Link>
+          )}
+          {!user && (
+            <button className="text-[#e60022]" onClick={ClickModal}>
+              LogIn
+            </button>
+          )}
+          {user && (
+            <button className="text-[#e60022]" onClick={logout}>
+              Logout
+            </button>
+          )}
           <SignUpModal
             open={open}
             setOpen={setOpen}
@@ -49,6 +63,7 @@ export default function Header() {
           />
         </nav>
       </header>
+      <Navbar />
     </div>
   );
 }

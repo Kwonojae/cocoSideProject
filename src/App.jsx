@@ -8,18 +8,12 @@ import Navbar from "./components/Navbar";
 const queryClient = new QueryClient();
 export default function App() {
   return (
-    <div className="flex flex-col h-full w-full">
+    <div className="flex flex-col h-screen w-full">
       <QueryClientProvider client={queryClient}>
         <AuthContextProvider>
           <ModalProvider>
-            <div className="flex flex-col w-full flex-grow-0  left-0 right-0 top-0  z-50 items-center ">
-              <Header />
-              <Navbar />
-            </div>
-            <div className="w-full flex-grow  h-full">
-              <Outlet />
-            </div>
-            {/* <Footer /> */}
+            <Header />
+            <Outlet />
           </ModalProvider>
         </AuthContextProvider>
       </QueryClientProvider>

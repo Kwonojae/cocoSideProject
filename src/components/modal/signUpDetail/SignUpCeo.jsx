@@ -149,12 +149,9 @@ export default function SignUpCeo() {
               className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-400"
             >
               I agree with the
-              <Link
-                to="/mypage"
-                className="text-blue-600 hover:underline dark:text-blue-500"
-              >
+              <span className="text-blue-600 hover:underline dark:text-blue-500">
                 terms and conditions
-              </Link>
+              </span>
               .
             </label>
           </div>

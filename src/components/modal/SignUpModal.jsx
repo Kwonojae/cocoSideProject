@@ -24,7 +24,7 @@ export default function SignUpModal({
   return (
     <>
       <Transition.Root show={open} as={Fragment}>
-        <Dialog as="div" className="relative z-10" onClose={handleCloseModal}>
+        <Dialog as="div" className="relative z-10" onClose={handleClose}>
           <Transition.Child
             as={Fragment}
             enter="ease-out duration-300"
@@ -74,10 +74,7 @@ export default function SignUpModal({
                   {/* select */}
                   <div className="flex justify-center mt-4">
                     {selectedOption === "" ? (
-                      <SignUpSelected
-                        selectedOption={selectedOption}
-                        handleOptionSelect={handleOptionSelect}
-                      />
+                      <SignUpSelected handleOptionSelect={handleOptionSelect} />
                     ) : null}
                   </div>
                   {selectedOption === "사장님" ? (
