@@ -77,105 +77,105 @@ export default function Mainpage({ scrollToMove }) {
 //이미지
 const dessert1 = [
   {
-    imageUrl1: "/public/images/dessert/item1.avif",
-    imageUrl2: "/public/images/dessert/item2.avif",
+    imageUrl1: "/images/dessert/item1.avif",
+    imageUrl2: "/images/dessert/item2.avif",
   },
   {
-    imageUrl1: "/public/images/dessert/item3.avif",
-    imageUrl2: "/public/images/dessert/item4.avif",
+    imageUrl1: "/images/dessert/item3.avif",
+    imageUrl2: "/images/dessert/item4.avif",
   },
   {
-    imageUrl1: "/public/images/dessert/item5.avif",
-    imageUrl2: "/public/images/dessert/item6.avif",
+    imageUrl1: "/images/dessert/item5.avif",
+    imageUrl2: "/images/dessert/item6.avif",
   },
   {
-    imageUrl1: "/public/images/dessert/item7.avif",
-    imageUrl2: "/public/images/dessert/item8.avif",
+    imageUrl1: "/images/dessert/item7.avif",
+    imageUrl2: "/images/dessert/item8.avif",
   },
   {
-    imageUrl1: "/public/images/dessert/item9.avif",
-    imageUrl2: "/public/images/dessert/item10.avif",
+    imageUrl1: "/images/dessert/item9.avif",
+    imageUrl2: "/images/dessert/item10.avif",
   },
   {
-    imageUrl1: "/public/images/dessert/item11.avif",
-    imageUrl2: "/public/images/dessert/item12.avif",
+    imageUrl1: "/images/dessert/item11.avif",
+    imageUrl2: "/images/dessert/item12.avif",
   },
 ];
 const dessert2 = [
   {
-    imageUrl1: "/public/images/dessert/item13.avif",
-    imageUrl2: "/public/images/dessert/item14.avif",
+    imageUrl1: "/images/dessert/item13.avif",
+    imageUrl2: "/images/dessert/item14.avif",
   },
   {
-    imageUrl1: "/public/images/dessert/item15.avif",
-    imageUrl2: "/public/images/dessert/item16.avif",
+    imageUrl1: "/images/dessert/item15.avif",
+    imageUrl2: "/images/dessert/item16.avif",
   },
   {
-    imageUrl1: "/public/images/dessert/item17.avif",
-    imageUrl2: "/public/images/dessert/item18.avif",
+    imageUrl1: "/images/dessert/item17.avif",
+    imageUrl2: "/images/dessert/item18.avif",
   },
   {
-    imageUrl1: "/public/images/dessert/item19.avif",
-    imageUrl2: "/public/images/dessert/item20.avif",
+    imageUrl1: "/images/dessert/item19.avif",
+    imageUrl2: "/images/dessert/item20.avif",
   },
   {
-    imageUrl1: "/public/images/dessert/item21.avif",
-    imageUrl2: "/public/images/dessert/item22.avif",
+    imageUrl1: "/images/dessert/item21.avif",
+    imageUrl2: "/images/dessert/item22.avif",
   },
   {
-    imageUrl1: "/public/images/dessert/item23.avif",
-    imageUrl2: "/public/images/dessert/item24.avif",
+    imageUrl1: "/images/dessert/item23.avif",
+    imageUrl2: "/images/dessert/item24.avif",
   },
 ];
 const interior1 = [
   {
-    imageUrl1: "/public/images/interior/item1.avif",
-    imageUrl2: "/public/images/interior/item2.avif",
+    imageUrl1: "/images/interior/item1.avif",
+    imageUrl2: "/images/interior/item2.avif",
   },
   {
-    imageUrl1: "/public/images/interior/item3.avif",
-    imageUrl2: "/public/images/interior/item4.avif",
+    imageUrl1: "/images/interior/item3.avif",
+    imageUrl2: "/images/interior/item4.avif",
   },
   {
-    imageUrl1: "/public/images/interior/item5.avif",
-    imageUrl2: "/public/images/interior/item6.avif",
+    imageUrl1: "/images/interior/item5.avif",
+    imageUrl2: "/images/interior/item6.avif",
   },
   {
-    imageUrl1: "/public/images/interior/item7.avif",
-    imageUrl2: "/public/images/interior/item8.avif",
+    imageUrl1: "/images/interior/item7.avif",
+    imageUrl2: "/images/interior/item8.avif",
   },
   {
-    imageUrl1: "/public/images/interior/item9.avif",
-    imageUrl2: "/public/images/interior/item10.avif",
+    imageUrl1: "/images/interior/item9.avif",
+    imageUrl2: "/images/interior/item10.avif",
   },
   {
-    imageUrl1: "/public/images/interior/item11.avif",
-    imageUrl2: "/public/images/interior/item12.avif",
+    imageUrl1: "/images/interior/item11.avif",
+    imageUrl2: "/images/interior/item12.avif",
   },
 ];
 const interior2 = [
   {
-    imageUrl1: "/public/images/interior/item13.avif",
-    imageUrl2: "/public/images/interior/item14.avif",
+    imageUrl1: "/images/interior/item13.avif",
+    imageUrl2: "/images/interior/item14.avif",
   },
   {
-    imageUrl1: "/public/images/interior/item15.avif",
-    imageUrl2: "/public/images/interior/item16.avif",
+    imageUrl1: "/images/interior/item15.avif",
+    imageUrl2: "/images/interior/item16.avif",
   },
   {
-    imageUrl1: "/public/images/interior/item17.avif",
-    imageUrl2: "/public/images/interior/item18.avif",
+    imageUrl1: "/images/interior/item17.avif",
+    imageUrl2: "/images/interior/item18.avif",
   },
   {
-    imageUrl1: "/public/images/interior/item19.avif",
-    imageUrl2: "/public/images/interior/item20.avif",
+    imageUrl1: "/images/interior/item19.avif",
+    imageUrl2: "/images/interior/item20.avif",
   },
   {
-    imageUrl1: "/public/images/interior/item21.avif",
-    imageUrl2: "/public/images/interior/item22.avif",
+    imageUrl1: "/images/interior/item21.avif",
+    imageUrl2: "/images/interior/item22.avif",
   },
   {
-    imageUrl1: "/public/images/interior/item23.avif",
-    imageUrl2: "/public/images/interior/item24.avif",
+    imageUrl1: "/images/interior/item23.avif",
+    imageUrl2: "/images/interior/item24.avif",
   },
 ];

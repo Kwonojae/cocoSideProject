@@ -27,22 +27,22 @@ export default function Mainpage2({ scrollTo }) {
           <div className="flex relative items-center justify-center  w-2/3 h-1/2 sm:w-full vsm:h-full sm:h-full lg:h-1/2">
             <img
               className="w-80 h-2/3 rounded-[50px] absolute z-30"
-              src="/public/images/interior/item16.avif"
+              src="/images/interior/item16.avif"
               alt=""
             />
             <img
               className="w-48 h-56 rounded-[55px] absolute -top-3  right-48 vsm:-right-[65px] sm:right-[75px] md:right-[125px] lg:right-[15px] ssxl:right-[260px] xl:right-[75px] 2xl:right-[140px] bxl:-top-10 sxl:right-[250px] mxl:right-[310px] bxl:right-96"
-              src="/public/images/dessert/item4.avif"
+              src="/images/dessert/item4.avif"
               alt=""
             />
             <img
               className="w-44 h-64 rounded-[48px] absolute bottom-1 right-44 vsm:-right-[65px] sm:right-[50px] md:right-[110px] lg:right-[15px] ssxl:right-[240px] xl:right-[55px] 2xl:right-[120px] sxl:right-[240px] mxl:right-[290px] bxl:right-[370px]"
-              src="/public/images/dessert/item22.avif"
+              src="/images/dessert/item22.avif"
               alt=""
             />
             <img
               className="w-52 h-72 rounded-3xl absolute top-40 left-28 vsm:-left-[100px] sm:left-[12px] md:left-[75px] lg:-left-[40px] ssxl:left-[200px] xl:left-[7px] 2xl:left-[70px] sxl:left-[190px] mxl:left-[250px] bxl:left-[330px]"
-              src="/public/images/dessert/item3.avif"
+              src="/images/dessert/item3.avif"
               alt=""
             />
           </div>
