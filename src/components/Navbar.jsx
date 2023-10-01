@@ -23,24 +23,24 @@ const interiorItems = [
   { label: "Industry", path: "undevelop" },
 ];
 const NAVBUTTON =
-  "inline-flex w-full justify-center gap-x-1.5 rounded-md  px-3 py-2 text-md font-semibold text-gray-900 hover:underline hover:decoration-2 transition-all ";
+  "inline-flex w-full justify-center gap-x-1.5 items-center rounded-md  px-3 py-2 text-md font-semibold text-gray-900 hover:underline hover:decoration-2 transition-all ";
 const DROPDOWNITEM =
   "absolute -left-5 z-10 mt-2 w-36 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none";
 export default function Navbar() {
   return (
-    <nav className="flex flex-grow-0 mb-2 w-11/12">
+    <nav className="flex flex-grow-0 items-center mb-2 w-11/12 sm:text-xl md:text-xl lg:text-2xl xl:text-3xl">
       <Link
-        className="inline-flex items-center justify-center gap-x-1.5 rounded-md  pr-2 py-2 text-md font-semibold text-gray-900 hover:underline hover:decoration-2"
+        className="inline-flex items-center justify-center gap-x-1.5 rounded-md  px-1 py-2   font-semibold text-gray-900 hover:underline hover:decoration-2"
         to="introduction"
       >
-        <TfiFaceSmile className="text-xl" />
+        <TfiFaceSmile />
         Introduction
       </Link>
       {/* Dessert */}
-      <Menu as="div" className="relative inline-block text-center ">
+      <Menu as="div" className="relative inline-block text-center  ">
         <div>
           <Menu.Button className={NAVBUTTON}>
-            <PiCakeLight className="text-2xl" />
+            <PiCakeLight />
             Dessert
           </Menu.Button>
         </div>

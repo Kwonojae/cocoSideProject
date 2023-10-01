@@ -60,11 +60,9 @@ export default function Mainpage({ scrollToMove }) {
         containerClassName={"flex justify-center space-x-2 "}
         activeClassName={"text-[#e60022] "}
       />
-      <div className="flex flex-col">
+      <div className="flex flex-col h-auto w-full">
         {currentItems.map((item, index) => (
-          <div className="" key={index}>
-            {item}
-          </div>
+          <div key={index}>{item}</div>
         ))}
       </div>
       <button

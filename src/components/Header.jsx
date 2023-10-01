@@ -22,13 +22,15 @@ export default function Header() {
   const { user, logout } = useAuthContext();
 
   return (
-    <div className="flex flex-col w-full pt-3 items-center">
-      <header className="flex justify-between w-11/12">
+    <div className="flex flex-col w-full pt-3 items-center sm:pt-1 md:pt-3 lg:pt-3 xl:pt-3">
+      <header className="flex justify-between w-11/12 ">
         <Link className="flex items-center " to="/">
-          <LuCat className="text-[#e60022] text-5xl" />
-          <h1 className="px-4 text-[#e60022] text-4xl font-medium">Coco</h1>
+          <LuCat className="text-[#e60022] text-5xl sm:text-3xl md:text-5xl lg:text-5xl xl:text-6xl" />
+          <h1 className="px-4 text-[#e60022] text-4xl font-medium sm:text-3xl sm:px-2 md:text-3xl lg:text-4xl xl:text-5xl">
+            Coco
+          </h1>
         </Link>
-        <nav className="flex items-center gap-4 font-semibold text-2xl">
+        <nav className="flex items-center gap-4 font-semibold text-2xl sm:text-2xl md:text-2xl lg:text-2xl xl:text-3xl  sm:gap-3">
           <button className="">
             <HiMoon />
             {/* {!darkMode && <HiMoon />} */}

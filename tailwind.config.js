@@ -10,11 +10,17 @@ export default {
       colors:{
         mainpage: '#fffd92ff',
       },
-    
+      screens:{
+        vsm: '500px',
+        ssxl:'910px',
+        sxl: '1700px',
+        mxl:'2200px',
+        bxl:'2560px'
+        
+      }
     },
   },
+  
   plugins: [require('tailwind-scrollbar-hide')],
 }
 
-// font-family: 'Martian Mono', monospace;
-// font-family: 'Nanum Myeongjo', serif;

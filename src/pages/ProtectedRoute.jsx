@@ -16,9 +16,6 @@ export default function ProtectedRoute({ children, requireAdmin }) {
   } else if (!user || (requireAdmin && !user.isAdmin)) {
     return <Navigate to="/" replace />;
   }
-  //   if (!user || (requireAdmin && !user.isAdmin)) {
-  //     return <Navigate to="/" replace />;
-  //   }
 
   return children;
 }
