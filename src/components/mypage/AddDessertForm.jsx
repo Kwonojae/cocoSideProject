@@ -75,8 +75,8 @@ export default function AddDessertForm() {
     }
   };
   return (
-    <div className="flex flex-col items-center h-full w-1/2 pt-40 ">
-      <div className="relative flex flex-col w-4/5 items-center outline rounded-[20px] mx-auto  bg-clip-border  p-3">
+    <div className="flex flex-col items-center h-full w-full pt-40 ">
+      <div className="relative flex flex-col sm:w-[550px] md:w-[680px] lg:w-[600px] xl:w-4/5 2xl:w-[900px] bxl:w-[900px] items-center outline rounded-[20px] mx-auto  bg-clip-border  p-3">
         <div className="mt-2 mb-8 w-full">
           <h4 className="px-4 text-xl font-bold text-navy-700 ">New Dessert</h4>
         </div>
@@ -91,7 +91,7 @@ export default function AddDessertForm() {
                   <img
                     src={previewUrl}
                     alt="Preview"
-                    className="h-full w-full object-cover rounded-lg shadow-xl"
+                    className="h-full w-full object-center rounded-lg shadow-xl"
                   />
                 ) : (
                   <>

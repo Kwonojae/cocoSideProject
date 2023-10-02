@@ -23,29 +23,29 @@ export default function UserProfile() {
 
   return (
     <>
-      <div className="flex flex-col  h-full w-1/2 pt-40 ">
-        <div className="relative flex flex-col w-4/6 h-[350px] rounded-[20px] outline  mx-auto  p-3  ">
+      <div className="flex flex-col  h-full w-full pt-40 ">
+        <div className="relative flex flex-col sm:w-[500px] md:w-[500px] lg:w-[450px] xl:w-[550px] 2xl:w-[600px] bxl:w-[800px] h-[350px] rounded-[20px] outline  mx-auto  p-3  ">
           <div className="mt-2 mb-8 w-full">
             <h4 className="px-4 text-xl font-bold ">Profile</h4>
           </div>
           <div className="grid grid-cols-2 gap-4 px-2 w-full items-center">
             <div className="flex flex-col items-start justify-center rounded-2xl bg-white  px-3 py-4  ">
-              <p className="text-sm text-gray-600 pb-3">Company</p>
+              <p className="text-lg text-gray-600 pb-3">Company</p>
               <p className="text-base font-medium text-[#e60022] ">{company}</p>
             </div>
 
             <div className="flex flex-col justify-center rounded-2xl bg-white  px-3 py-4  ">
-              <p className="text-sm text-gray-600 pb-3">Phone</p>
+              <p className="text-lg text-gray-600 pb-3">Phone</p>
               <p className="text-base font-medium text-[#e60022] ">{phone}</p>
             </div>
 
             <div className="flex flex-col items-start justify-center rounded-2xl bg-white  px-3 py-4  ">
-              <p className="text-sm text-gray-600 pb-3">Website URL</p>
+              <p className="text-lg text-gray-600 pb-3">Website URL</p>
               <p className="text-base font-medium  text-[#e60022]">{website}</p>
             </div>
 
             <div className="flex flex-col justify-center rounded-2xl bg-white  px-3 py-4  ">
-              <p className="text-sm text-gray-600 pb-3">Email</p>
+              <p className="text-lg text-gray-600 pb-3">Email</p>
               <p className="text-base font-medium  text-[#e60022]">{email}</p>
             </div>
             <div className="col-end-3 flex flex-col justify-center items-end pr-16 ">

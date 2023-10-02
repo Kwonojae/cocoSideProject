@@ -9,7 +9,7 @@ export default function Home() {
     scrollTo.current.scrollIntoView({ behavior: "smooth", block: "start" });
   };
   return (
-    <div className="h-full w-full  scrollbar-hide overflow-y-scroll scroll snap-y snap-mandatory">
+    <div className="h-full w-full  scrollbar-hide overflow-y-scroll scroll snap-y snap-mandatory transition delay-300 duration-700 scroll-smooth">
       <Mainpage scrollToMove={scrollToMove} />
       <Mainpage2 scrollTo={scrollTo} />
     </div>

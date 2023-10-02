@@ -10,7 +10,7 @@ export default function Mainpage2({ scrollTo }) {
       <section className="w-1/2 h-full  font-myfontNanum sm:w-full vsm:w-full ">
         <div className="w-full h-full flex flex-col items-center justify-center text-[#c31852] ">
           <h1 className="text-7xl font-bold pb-8 ">트랜드 순위</h1>
-          <div className="flex flex-col items-center text-2xl font-medium vsm:text-xl">
+          <div className="flex flex-col items-center text-2xl font-medium vsm:text-xl md:text-2xl lg:">
             <p>요즘 트랜드 디저트와 인테리어를 확인해보세요!</p>
             <p>좋아하는 디저트를 잘만드는곳을 찾을수있습니다!</p>
             <p>내 가게에 인테리어를 어떻게 하면 좋을지 참고해보세요!</p>
@@ -41,7 +41,7 @@ export default function Mainpage2({ scrollTo }) {
               alt=""
             />
             <img
-              className="w-52 h-72 rounded-3xl absolute top-40 left-28 vsm:-left-[100px] sm:left-[12px] md:left-[75px] lg:-left-[40px] ssxl:left-[200px] xl:left-[7px] 2xl:left-[70px] sxl:left-[190px] mxl:left-[250px] bxl:left-[330px]"
+              className="w-52 h-72 rounded-3xl absolute top-40 left-28 vsm:-left-[100px] sm:left-[12px] md:left-[75px] lg:-left-[15px] ssxl:left-[200px] xl:left-[7px] 2xl:left-[70px] sxl:left-[190px] mxl:left-[250px] bxl:left-[330px]"
               src="/images/dessert/item3.avif"
               alt=""
             />
