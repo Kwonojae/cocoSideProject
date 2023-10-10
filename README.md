@@ -41,12 +41,11 @@ MyPage
     <br/>
    <img align="left" src="https://img.shields.io/badge/ReactQuery-FF4154?style=flat&logo=ReactQuery&logoColor=white" width="140" height="30" style="padding-right:6px"/>
    <img align="left" src="https://img.shields.io/badge/Tailwind Css-06B6D4?style=flat&logo=TailwindCss&logoColor=white" width="140" height="30" style="padding-right:6px"/>
-   
    <img align="left" src="https://img.shields.io/badge/FireBase-F07A5B?style=flat&logo=FireBase&logoColor=white" width="100" height="30" style="padding-right:6px"/>
    <img align="left" src="https://img.shields.io/badge/Netlify-00C7B7?style=flat&logo=Netlify&logoColor=white" width="100" height="30" style="padding-right:6px"/>
    <img align="left" src="https://img.shields.io/badge/Cloudinary-2C39BD?style=flat&logo=Cloudflare&logoColor=white" width="120" height="30" style="padding-right:6px"/>
    <img align="left" src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=GitHub&logoColor=white" width="90" height="30" style="padding-right:6px"/>
+   <br/>
+   <br/>
    <img align="left" src="https://img.shields.io/badge/Git-F05032?style=flat&logo=Git&logoColor=white" width="60" height="30" style="padding-right:6px"/>
-   <br/>
-   <br/>
    <img align="left" src="https://img.shields.io/badge/macOS-000000?style=flat&logo=Apple&logoColor=white" width="100" height="30" style="padding-right:6px"/>
