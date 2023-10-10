@@ -30,19 +30,19 @@ MyPage
 
 ## Tech Stack
 
-   <img src="https://img.shields.io/badge/VsCode-007ACC?style=flat&logo=Visual Studio code&logoColor=white"/>
-   <img src="https://img.shields.io/badge/Vite-646CFF?style=flat&logo=Vite&logoColor=white"/>
-   <img src="https://img.shields.io/badge/HTML-E34F26?style=flat&logo=html5&logoColor=white"/>
-   <img src="https://img.shields.io/badge/CSS-1572B6?style=flat&logo=CSS3&logoColor=white"/>
-   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=white"/>
-   <img src="https://img.shields.io/badge/React-3178C6?style=flat&logo=React&logoColor=white"/>
-   <img src="https://img.shields.io/badge/ReactContext-000000?style=flat&logo=React&logoColor=white"/>
-   <img src="https://img.shields.io/badge/ReactQuery-FF4154?style=flat&logo=ReactQuery&logoColor=white"/>
+   <img src="https://img.shields.io/badge/VsCode-007ACC?style=flat&logo=Visual Studio code&logoColor=white" height="30"/>
+   <img src="https://img.shields.io/badge/Vite-646CFF?style=flat&logo=Vite&logoColor=white" height="30"/>
+   <img src="https://img.shields.io/badge/HTML-E34F26?style=flat&logo=html5&logoColor=white" height="30"/>
+   <img src="https://img.shields.io/badge/CSS-1572B6?style=flat&logo=CSS3&logoColor=white" height="30"/>
+   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=white" height="30"/>
+   <img src="https://img.shields.io/badge/React-3178C6?style=flat&logo=React&logoColor=white" height="30"/>
+   <img src="https://img.shields.io/badge/ReactContext-000000?style=flat&logo=React&logoColor=white" height="30"/>
+   <img src="https://img.shields.io/badge/ReactQuery-FF4154?style=flat&logo=ReactQuery&logoColor=white" height="30"/>
 
-   <img src="https://img.shields.io/badge/Tailwind Css-06B6D4?style=flat&logo=TailwindCss&logoColor=white"/>
-   <img src="https://img.shields.io/badge/FireBase-F07A5B?style=flat&logo=FireBase&logoColor=white"/>
-   <img src="https://img.shields.io/badge/Netlify-00C7B7?style=flat&logo=Netlify&logoColor=white"/>
-   <img src="https://img.shields.io/badge/Cloudinary-2C39BD?style=flat&logo=Cloudflare&logoColor=white"/>
-   <img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=GitHub&logoColor=white"/>
-   <img src="https://img.shields.io/badge/Git-F05032?style=flat&logo=Git&logoColor=white"/>
-   <img src="https://img.shields.io/badge/macOS-000000?style=flat&logo=Apple&logoColor=white"/>
+   <img src="https://img.shields.io/badge/Tailwind Css-06B6D4?style=flat&logo=TailwindCss&logoColor=white" height="30"/>
+   <img src="https://img.shields.io/badge/FireBase-F07A5B?style=flat&logo=FireBase&logoColor=white" height="30"/>
+   <img src="https://img.shields.io/badge/Netlify-00C7B7?style=flat&logo=Netlify&logoColor=white" height="30"/>
+   <img src="https://img.shields.io/badge/Cloudinary-2C39BD?style=flat&logo=Cloudflare&logoColor=white" height="30"/>
+   <img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=GitHub&logoColor=white" height="30"/>
+   <img src="https://img.shields.io/badge/Git-F05032?style=flat&logo=Git&logoColor=white" height="30"/>
+   <img src="https://img.shields.io/badge/macOS-000000?style=flat&logo=Apple&logoColor=white" height="30"/>
