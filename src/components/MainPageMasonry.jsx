@@ -1,5 +1,5 @@
 const MAINPAGEIMAGE =
-  " h-[300px] w-[300px] vsm:h-[100px] sm:h-[130px] md:h-[170px] lg:h-[200px] xl:h-[250px]  2xl:h-[260px] 2xl:w-[280px]  mt-3 rounded-xl ";
+  " h-[300px] w-[300px]  vsm:h-[100px] sm:h-[130px] md:h-[170px] laptop1:h-[150px] laptop2:h-[150px] laptop2:w-[180px] lg:h-[150px] xl:h-[250px]  2xl:h-[260px] 2xl:w-[280px]  mt-3 rounded-xl ";
 
 export default function MainPageMasonry({ masonryItems }) {
   return (

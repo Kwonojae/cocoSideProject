@@ -22,7 +22,7 @@ export default function Header() {
   const { user, logout } = useAuthContext();
 
   return (
-    <div className="flex flex-col w-full pt-3 items-center sm:pt-1 md:pt-3 lg:pt-3 xl:pt-3">
+    <div className="flex flex-col w-full pt-3 items-center sm:pt-1 md:pt-3 lg:pt-3 xl:pt-3 z-50">
       <header className="flex justify-between w-11/12 ">
         <Link className="flex items-center " to="/">
           <LuCat className="text-[#e60022] text-5xl sm:text-3xl md:text-5xl lg:text-5xl xl:text-6xl" />

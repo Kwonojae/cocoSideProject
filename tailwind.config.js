@@ -11,12 +11,18 @@ export default {
         mainpage: '#fffd92ff',
       },
       screens:{
+        mobile:'320px',
+        mobile1:'375px',
+        mobile2:'425px',
         vsm: '500px',
         ssxl:'910px',
+        laptop1:'1440px',
+        laptop2:'1512px',
         sxl: '1700px',
+      
         mxl:'2200px',
-        bxl:'2560px'
-        
+        bxl:'2560px',
+        // hsm:'827px',
       }
     },
   },

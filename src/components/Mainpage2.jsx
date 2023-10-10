@@ -5,7 +5,7 @@ export default function Mainpage2({ scrollTo }) {
   return (
     <div
       ref={scrollTo}
-      className="h-full w-full snap-center bg-mainpage sm:flex-col sm:flex sm:items-center vsm:flex-col vsm:flex vsm:items-center lg:flex-row "
+      className="h-full w-full  bg-mainpage sm:flex-col sm:flex sm:items-center vsm:flex-col vsm:flex vsm:items-center lg:flex-row "
     >
       <section className="w-1/2 h-full  font-myfontNanum sm:w-full vsm:w-full ">
         <div className="w-full h-full flex flex-col items-center justify-center text-[#c31852] ">

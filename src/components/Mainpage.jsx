@@ -47,7 +47,7 @@ export default function Mainpage({ scrollToMove }) {
   }, [currentPage, pageCount]);
 
   return (
-    <div className="flex flex-col items-center justify-end h-full snap-center">
+    <div className="flex flex-col items-center justify-end h-full">
       <Banner />
       <ReactPaginate
         className=""
