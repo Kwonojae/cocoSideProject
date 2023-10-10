@@ -30,24 +30,19 @@ MyPage
 
 ## Tech Stack
 
-   <img align="left" src="https://img.shields.io/badge/VsCode-007ACC?style=flat&logo=Visual Studio code&logoColor=white" width="100" style="padding-right:3px;"/>
-   <img align="left" src="https://img.shields.io/badge/Vite-646CFF?style=flat&logo=Vite&logoColor=white" width="70" style="padding-right:3px;"/>
-   <img align="left" src="https://img.shields.io/badge/HTML-E34F26?style=flat&logo=html5&logoColor=white" width="80" style="padding-right:3px;"/>
-   <img align="left" src="https://img.shields.io/badge/CSS-1572B6?style=flat&logo=CSS3&logoColor=white" width="70" style="padding-right:3px;"/>
-   <img align="left" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=white" width="120" style="padding-right:3px;"/>
-   <img align="left" src="https://img.shields.io/badge/React-3178C6?style=flat&logo=React&logoColor=white" width="80" style="padding-right:3px;"/>
-   <img align="left" src="https://img.shields.io/badge/ReactContext-000000?style=flat&logo=React&logoColor=white" width="120" style="padding-right:3px;"/>
-   <!-- 나머지 이미지 -->
-   <br/>
-   <br/>
-   <img align="left" src="https://img.shields.io/badge/ReactQuery-FF4154?style=flat&logo=ReactQuery&logoColor=white" width="140" style="padding-right:3px;"/>
-   <img align="left" src="https://img.shields.io/badge/Tailwind Css-06B6D4?style=flat&logo=TailwindCss&logoColor=white" width="140" style="padding-right:3px;"/>
-   <img align="left" src="https://img.shields.io/badge/FireBase-F07A5B?style=flat&logo=FireBase&logoColor=white" width="100" style="padding-right:3px;"/>
-   <img align="left" src="https://img.shields.io/badge/Netlify-00C7B7?style=flat&logo=Netlify&logoColor=white" width="100" style="padding-right:3px;"/>
-   <img align="left" src="https://img.shields.io/badge/Cloudinary-2C39BD?style=flat&logo=Cloudflare&logoColor=white" width="120" style="padding-right:3px;"/>
-   <!-- 나머지 이미지 -->
-   <br/>
-   <br/>
-   <img align="left" src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=GitHub&logoColor=white" width="90" style="padding-right:3px;"/>
-   <img align="left" src="https://img.shields.io/badge/Git-F05032?style=flat&logo=Git&logoColor=white" width="60" style="padding-right:3px;"/>
-   <img align="left" src="https://img.shields.io/badge/macOS-000000?style=flat&logo=Apple&logoColor=white" width="100" style="padding-right:3px;"/>
+![Image 1](https://img.shields.io/badge/VsCode-007ACC?style=flat&logo=Visual%20Studio%20Code&logoColor=white)
+![Image 2](https://img.shields.io/badge/Vite-646CFF?style=flat&logo=Vite&logoColor=white)
+![Image 3](https://img.shields.io/badge/HTML-E34F26?style=flat&logo=html5&logoColor=white)
+![Image 4](https://img.shields.io/badge/CSS-1572B6?style=flat&logo=CSS3&logoColor=white)
+![Image 5](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=white)
+![Image 6](https://img.shields.io/badge/React-3178C6?style=flat&logo=React&logoColor=white)
+![Image 7](https://img.shields.io/badge/ReactContext-000000?style=flat&logo=React&logoColor=white)
+![Image 8](https://img.shields.io/badge/ReactQuery-FF4154?style=flat&logo=ReactQuery&logoColor=white)
+
+![Image 9](https://img.shields.io/badge/Tailwind%20Css-06B6D4?style=flat&logo=TailwindCss&logoColor=white)
+![Image 10](https://img.shields.io/badge/FireBase-F07A5B?style=flat&logo=FireBase&logoColor=white)
+![Image 11](https://img.shields.io/badge/Netlify-00C7B7?style=flat&logo=Netlify&logoColor=white)
+![Image 12](https://img.shields.io/badge/Cloudinary-2C39BD?style=flat&logo=Cloudflare&logoColor=white)
+![Image 13](https://img.shields.io/badge/GitHub-181717?style=flat&logo=GitHub&logoColor=white)
+![Image 14](https://img.shields.io/badge/Git-F05032?style=flat&logo=Git&logoColor=white)
+![Image 15](https://img.shields.io/badge/macOS-000000?style=flat&logo=Apple&logoColor=white)
