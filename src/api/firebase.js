@@ -52,7 +52,7 @@ export async function login(user){
         await signInWithEmailAndPassword(auth,email,password)
         console.log('로그인 성공');
     } catch (error) {
-        console.error('로그인 실패',error.message);
+        console.error('로그인 실패!!!',error.message);
     }
 }
 
