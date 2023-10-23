@@ -207,7 +207,7 @@ export async function getDessertList() {
  * userId값은 다른곳에서도 사용 가능성이 있기때문에 
  * 우선  DessertListCard에서 navigate사용해서 userId값을 가져와서 적용해주었다.
  * update할때 기존 데이터를 먼저 불러와서 update할 데이터를 적용해주는 방식인거같다 
- * 기분탓인지 모르겠지만 update가  set보다 빠른거같다 network창에도 따로 update되었다는 말이없다 하지만 없데이틑 되었다... 
+ * 기분탓인지 모르겠지만 update가  set보다 빠른거같다 network창에도 따로 update되었다는 말이없다 하지만 업데이트 되었다... 
  * @param {*} id 
  * @param {*} uproduct 
  * @param {*} imageurl 

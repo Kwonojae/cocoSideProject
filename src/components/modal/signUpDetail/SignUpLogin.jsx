@@ -21,7 +21,7 @@ export default function SignUpLogin() {
       setOpen(false);
     } catch (error) {
       //TODO: 로그인 실패 사유
-      //로그아웃시 권한 설정 라우터 프로텍티드
+      alert("아이디 또는 비밀번호를 확인하세요");
     }
   };
 
