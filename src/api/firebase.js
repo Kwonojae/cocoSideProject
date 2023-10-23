@@ -40,7 +40,8 @@ export async function createUser(user){
 /**
  * @FireBase AUTH
  * @LOGIN
- * signInWithEmailAndPassword API 
+ * signInWithEmailAndPassword API
+ * 로그인 실패 로직을 만들어야 되 testPr 에서
  * @param {*} user 
  */
 export async function login(user){
